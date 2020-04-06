@@ -53,7 +53,7 @@ class TicTacToe
   end
 
   def turn
-    puts "Choose a number 1-9: "
+    puts "Player #{current_player}, Choose a number 1-9: "
     input = gets.strip
     index = input_to_index(input)
     if valid_move?(index)
