@@ -98,4 +98,18 @@ class TicTacToe
     draw? || won?
   end
 
+  def winner
+    player_token = won?
+
+    if !won?
+      return nil
+    end
+
+    if @board[player_token[0]] == "X"
+      return "X"
+    else
+      return "O"
+    end
+  end
+
 end
