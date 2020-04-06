@@ -62,6 +62,7 @@ class TicTacToe
     else
       puts "That position is already taken"
       turn
+    end
   end
 
 
